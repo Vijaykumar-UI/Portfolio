@@ -1,0 +1,204 @@
+@font-face {
+  font-family: lemonmilk;
+  src: url(vijay\ kumar/LEMONMILK-light.otf);
+}
+@font-face {
+  font-family: blacksword;
+  src: url(vijay\ kumar/Blacksword.otf);
+}
+@font-face {
+  font-family: varsity;
+  src: url(vijay\ kumar/varsity_regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: transparent;
+}
+.hero {
+  position: relative;
+  width: 100;
+  min-height: 100v;
+  background-color: white;
+  overflow: hidden;
+}
+.hero .logo {
+  height: 100px;
+}
+nav {
+  display: flex;
+  margin: auto;
+  width: 84%;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: lemonmilk;
+}
+nav ul li a:hover {
+  color: red;
+}
+.detel {
+  margin-left: 8%;
+  margin-top: 10%;
+}
+.detel h1 {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 15px;
+  font-family: copperplate Gothic;
+}
+span {
+  color: orange;
+  font-family: blacksword;
+}
+.detel p {
+  color: black;
+  line-height: 20px;
+  font-family: lemonmilk;
+}
+.detel a {
+  background-color: black;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: lightcyan;
+  display: inline-block;
+  margin: 30px;
+  border-radius: 5px;
+}
+.detel a:hover {
+  color: red;
+}
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.images:hover .shape2 {
+  bottom: 40px;
+}
+.images:hover .boy {
+  left: 45%;
+}
+
+/*@media screen and (max-width: 600px)
+ {
+    .hero .logo{
+        height: 40px;
+        margin-bottom: 50vh;
+        margin-right: 70%;
+    }
+    .nav ul li{
+        position: absolute;
+        background-color: mediumaquamarine;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: all 1s ease-out;
+    }
+    .detel{
+        margin-top: 5vh;
+        margin-left: 8vh;
+    }
+    .detel h1{
+        font-size: 50px;
+        margin-bottom: 5%;
+    }
+.images{
+    width: 20;
+    height: 30;
+}
+}*/
+
+#about {
+  padding: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 80%;
+  border-radius: 5px;
+}
+.about-col-2 {
+  flex-basis: 65%;
+  font-family: lemonmilk bold;
+}
+.about-col-2 p {
+  font-family: lemonmilk bold;
+  font-weight: 200;
+}
+.sub-title {
+  font-size: 30px;
+  font-family: lemonmilk;
+  font-weight: 600;
+}
+.tab-title {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 40px;
+  font-size: 20px;
+  font-family: lemonmilk-regular;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: ease 0.5s;
+}
+.tab-links:hover:after {
+  width: 100%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  font-size: 18px;
+  font-family: lemonmilk-regular;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
